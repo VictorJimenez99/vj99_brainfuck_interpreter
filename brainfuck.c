@@ -84,10 +84,10 @@ cell *run_code(cell *pointer, FILE *code, unsigned long int code_position)
             pointer->content = (int)getchar();
             break;
         case '.':
-            //if (pointer->content <= 255)
-            //  printf("%c", (char)pointer->content);
-            //else
-            printf("%4d,", pointer->content);
+            if (pointer->content <= 255)
+                printf("%c", (char)pointer->content);
+            else
+                printf("%4d,", pointer->content);
         case '[':
             //loop_position++;
             //loop_position = code_position;
