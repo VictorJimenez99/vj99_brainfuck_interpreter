@@ -3,7 +3,7 @@
 PROYECTO=brainfuck
 DESTDIR=/usr/local/bin
 CFLAGS=-Wall
-LFLAGS= -lm -lpthread
+LFLAGS=
 CC=gcc
 
 all: $(PROYECTO)
